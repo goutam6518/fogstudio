@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+<body>
+    <header>
+        <h1>IGS</h1>
+        <p>Upload and share your games with the world!</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="upload.html">Upload</a>
+            <a href="#">Contact</a>
+            <a href="profile.html"class="active">Profile</a>
+        </nav>
+
+    </header>
+
+    <div style="display: flex; flex-direction: column; align-items: center; margin-top: 30px;">
+
+        <img id="userImg" src="" alt="Profile Picture" style="border-radius: 50%; width: 150px; height: 150px;">
+        <h4 id="userName" style="margin-top: 0px;">USER NAME </h4>
+
+        <button id="followBtn" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">Follow</button>
+
+        <div style="display: flex; flex-direction: row; align-items: center; margin-top: 16px;">
+
+            <p id="userFollowersValue" style="margin: 18px; font-size: 14px;">Followers : 2.4k</p>
+            <p id="userLevelValue" style="margin: 18px; font-size: 14px;">Level : 0</p>
+            <p id="totalGames" style="margin: 18px; font-size: 14px;">Games : 0</p>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="profile.js" defer></script>
+
+</body>
+</html>

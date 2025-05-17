@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGS - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 300px; /* Ensure max-width is set */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #4cae4c;
+        }
+        .container .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .container .link a {
+            color: #5cb85c;
+            text-decoration: none;
+        }
+        .container .link a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .container h2 {
+                font-size: 24px;
+            }
+            .container button {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 400px) {
+            .container {
+                padding: 10px;
+            }
+            .container h2 {
+                font-size: 20px;
+            }
+            .container button {
+                font-size: 12px;
+            }
+        }
+    </style>
+
+    <script type="module" src="auth.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>IGS Login</h2>
+        <form>
+            <input id="username" type="text" placeholder="Username" required>
+            <input id="email" type="email" placeholder="Email address" required>
+            <input id="password" type="password" placeholder="Password" required>
+            <button id="loginButton" type="submit">Login</button>
+        </form>
+        <div class="link">
+            <a id="komTxt" href="#">Don't have an account? Create Account</a>
+        </div>
+    </div>
+</body>
+</html>
