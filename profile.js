@@ -1,21 +1,20 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
-import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-analytics.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-auth.js";
+import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyDBEgglF-MlX_LSn8XjXoWDt9SdRsqoxQs",
-    authDomain: "codex-12c1a.firebaseapp.com",
-    databaseURL: "https://codex-12c1a-default-rtdb.firebaseio.com",
-    projectId: "codex-12c1a",
-    storageBucket: "codex-12c1a.appspot.com",
-    messagingSenderId: "656317882947",
-    appId: "1:656317882947:web:11c5818c595667099caaf6",
-    measurementId: "G-X0QZNSZR60"
+    apiKey: "AIzaSyCRtPZ34Y1J-p5b7FJxEUagYg3h_D6PbhM",
+    authDomain: "igsfogstudio-df541.firebaseapp.com",
+    projectId: "igsfogstudio-df541",
+    storageBucket: "igsfogstudio-df541.firebasestorage.app",
+    messagingSenderId: "206722625476",
+    appId: "1:206722625476:web:c222830b5404f87bf57e91",
+    measurementId: "G-1JL82Z0FK0"
 };
 
 // Initialize Firebase
